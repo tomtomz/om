@@ -45,6 +45,7 @@ Commands:
   delete-product                  deletes a product from the Ops Manager
   delete-unused-products          deletes unused products on the Ops Manager targeted
   deployed-products               lists deployed products
+  deployed-manifest               prints the deployed manifest for a product
   errands                         list errands for a product
   export-installation             exports the installation of the target Ops Manager
   generate-certificate            generates a new certificate signed by Ops Manager's root CA
