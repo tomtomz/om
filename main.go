@@ -162,6 +162,7 @@ func main() {
 	commandSet["configure-bosh"] = commands.NewConfigureBosh(boshService, diagnosticService, stdout)
 	commandSet["configure-director"] = commands.NewConfigureDirector(directorService, jobsService, stagedProductsService, stdout)
 	commandSet["configure-product"] = commands.NewConfigureProduct(stagedProductsService, jobsService, stdout)
+	commandSet["config-template"] = commands.NewConfigTemplate(stdout)
 	commandSet["create-certificate-authority"] = commands.NewCreateCertificateAuthority(certificateAuthoritiesService, presenter)
 	commandSet["create-vm-extension"] = commands.NewCreateVMExtension(vmExtensionService, stdout)
 	commandSet["credential-references"] = commands.NewCredentialReferences(credentialReferencesService, deployedProductsService, presenter, stdout)
